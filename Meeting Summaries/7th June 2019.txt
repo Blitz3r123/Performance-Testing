@@ -1,0 +1,10 @@
+From today's meeting we are starting to understand more of the data. Here are the tests that we decided to carry out:
+
+1) 1 Publisher 1 Subscriber LatencyCount=1 numIter=500,000
+2) 1 Publisher 1 Subscriber LatencyCount=10,000 numIter=500,000
+3) 1 Publisher 5 Subscriber LatencyCount=10,000 numIter=500,000
+4) 1 Publisher 10 Subscriber LatencyCount=10,000 numIter=500,000
+
+Each test will be run 3 times and machines are to be restarted between each test.
+
+In the future we will run seperate tests for bestEffort vs Reliable. We also are awaiting an explanation regarding why the number of packets do not correspond on each side (publisher and subscriber).
