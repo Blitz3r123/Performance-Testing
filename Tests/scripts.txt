@@ -1,0 +1,41 @@
+---------- 1 TO 1 ----------
+Publishers:
+perftest_java.bat -pub -dataLen 4096 -numSubscribers 1 -domain 1 -executionTime 10
+
+Subscribers:
+perftest_java.bat -sub -dataLen 4096 -domain 1 -sidMultiSubTest 0
+
+---------- 1 TO 2 ----------
+Publishers:
+perftest_java.bat -pub -dataLen 4096 -numSubscribers 2 -domain 1 -executionTime 10
+
+Subscribers:
+perftest_java.bat -sub -dataLen 4096 -domain 1 -sidMultiSubTest 0
+perftest_java.bat -sub -dataLen 4096 -domain 1 -sidMultiSubTest 1
+
+---------- 1 TO 5 ----------
+Publishers:
+perftest_java.bat -pub -dataLen 4096 -numSubscribers 5 -domain 1 -executionTime 10
+
+Subscribers:
+perftest_java.bat -sub -dataLen 4096 -domain 1 -sidMultiSubTest 0
+perftest_java.bat -sub -dataLen 4096 -domain 1 -sidMultiSubTest 1
+perftest_java.bat -sub -dataLen 4096 -domain 1 -sidMultiSubTest 2
+perftest_java.bat -sub -dataLen 4096 -domain 1 -sidMultiSubTest 3
+perftest_java.bat -sub -dataLen 4096 -domain 1 -sidMultiSubTest 4
+
+---------- 1 TO 10 ----------
+Publishers:
+perftest_java.bat -pub -dataLen 4096 -numSubscribers 10 -domain 1 -executionTime 10
+
+Subscribers:
+perftest_java.bat -sub -dataLen 4096 -domain 1 -sidMultiSubTest 0
+perftest_java.bat -sub -dataLen 4096 -domain 1 -sidMultiSubTest 1
+perftest_java.bat -sub -dataLen 4096 -domain 1 -sidMultiSubTest 2
+perftest_java.bat -sub -dataLen 4096 -domain 1 -sidMultiSubTest 3
+perftest_java.bat -sub -dataLen 4096 -domain 1 -sidMultiSubTest 4
+perftest_java.bat -sub -dataLen 4096 -domain 1 -sidMultiSubTest 5
+perftest_java.bat -sub -dataLen 4096 -domain 1 -sidMultiSubTest 6
+perftest_java.bat -sub -dataLen 4096 -domain 1 -sidMultiSubTest 7
+perftest_java.bat -sub -dataLen 4096 -domain 1 -sidMultiSubTest 8
+perftest_java.bat -sub -dataLen 4096 -domain 1 -sidMultiSubTest 9

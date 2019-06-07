@@ -1,0 +1,19 @@
+Today we analysed my latency test results and here is what we saw:
+
+- Test was run for 10 seconds but there were only 9 rows.
+- There are unknown reasons for values for the average, standard deviation and maximum on the first result.
+
+Here are the next steps:
+
+1. Run following tests for 10, 120 and 300 seconds:
+	a. Repeat latency test with no multicast and no change in samples.
+	b. Run latency test with latencyCount of 1.
+2. Run throughput tests for 10, 120 and 300 seconds for the following:
+	a. 1 Publisher 1 Subscriber
+		i. latencyCount of 10 samples
+		ii. latencyCount of 100 samples
+		iii. latencyCount of 1000 samples
+
+For all tests machine will be restarted after a test has been run.
+
+Once results have been attained for step 1, I will contact you and hopefully we can arrange a meeting to discuss the results.

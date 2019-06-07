@@ -1,0 +1,24 @@
+Today we talked a lot around the tests that I had run for the updated scripts. Here is the script for one publisher and one subscriber:
+
+Publisher:
+perftest_java.bat -pub -dataLen 4096 -numSubscribers 1 -domain 1 -executionTime 10
+
+Subscriber:
+perftest_java.bat -sub -dataLen 4096 -domain 1 -sidMultiSubTest 0
+
+We agreed that I will do the following tasks:
+
+1. Run minimum latency test to create baseline for latency results in the future
+2. Run multiple tests with varying samples. Here are the layouts of the test that I will run:
+	1 Publisher 1 Subscriber 10, 100, 1000 Samples
+
+	1 Publisher 2 Subscriber 10, 100, 1000 Samples
+
+	1 Publisher 5 Subscriber 10, 100, 1000 Samples
+
+	1 Publisher 10 Subscriber 10, 100, 1000 Samples
+3. Find out if each line written to the csv file is a second.
+4. Find out what each column represents for the publisher and subscriber.
+5. Find it variable counters are reset only once or every second.
+
+We also talked about Benchmark Uniformity where we want RTI tests and OpenSplice tests to be as similar as possible. I will also be taking the next two weeks off to revise for my exams and we plan to maybe meet Wed 22nd in the afternoon or Tue 28th on Skype.
