@@ -1,0 +1,17 @@
+Today we discussed the interesting results for the latencyCount of 1. We also compared the two results from Nayim and I for the other tests (numIter 500000 and latencyCount 10000). Next steps are to run the following tests:
+
+1) Best Effort:
+	a) 1 Pub 1 Sub LatencyCount 1 numIter 500000
+	b) 1 Pub 1 Sub LatencyCount 10000 numIter 500000
+	c) 1 Pub 5 Sub LatencyCount 10000 numIter 500000
+	d) 1 Pub 10 Sub LatencyCount 10000 numIter 500000
+2) Reliability + Multicast:
+	a) 1 Pub 1 Sub LatencyCount 10000 numIter 500000
+	b) 1 Pub 5 Sub LatencyCount 10000 numIter 500000
+	c) 1 Pub 10 Sub LatencyCount 10000 numIter 500000
+3) Best Effort + Multicast:
+	a) 1 Pub 1 Sub LatencyCount 10000 numIter 500000
+	b) 1 Pub 5 Sub LatencyCount 10000 numIter 500000
+	c) 1 Pub 10 Sub LatencyCount 10000 numIter 500000
+	
+Each test should be run 3 times. I will also ask on the forums about the weird latencyCount 1 results and send an update on it.
