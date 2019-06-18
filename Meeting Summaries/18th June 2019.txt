@@ -1,0 +1,19 @@
+Ask Javier if he runs his tests on same machine and state that I run them on my machine.
+
+Post about weird values for latencyCount 1 and show our commands.
+
+Post about missing pub values on Kaleem test 5.
+
+Add overview section close to results table.
+
+Ask about linux vs windows. What if any config params of rti affect deployment on windows or linux?
+
+Which parameters affect performance and how to play with them.
+
+Color same test types in table.
+
+Let everyone know about docor appointment outcome.
+
+Next steps: set up virtual machines.
+
+Try access to virtual machine from home.
