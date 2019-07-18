@@ -1,6 +1,5 @@
-<<<<<<< HEAD
-Ask Javier I am running tests on a single machine and is he?
-=======
+
+
 Ask Javier if he runs his tests on same machine and state that I run them on my machine.
 Post about weird values for latencyCount 1 and show our commands.
 Post about missing pub values on Kaleem test 5.
@@ -18,4 +17,4 @@ Posts:
 3. Missing publisher values for Kaleem test 5.
 4. Do any configuration parameters affect operating systems? Specifically Linux VS Windows
 5. Which parameters affect performance and how to manipulate these parameters?
->>>>>>> d0cc5f5220dfa3ff06158a69d614782f6ca99647
+

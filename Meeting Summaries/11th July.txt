@@ -1,0 +1,14 @@
+Today, we analysed Nayim's results and Kaleem also managed to get tests working on the Windows VMs. Here are the next steps:
+
+Run tests with following parameters:
+
+- LatencyCount 10,000; numIter 10,000,000; 1 pub + 1 sub; 1 pub + 5 sub; 1 pub + 10 sub
+	- 512 bytes
+	- 4k
+	- 256k
+
+Sub division will be of the following: 
+5 subs: 2 2 1
+10 subs: 3 3 4
+
+Also, on the Windows VMs Kaleem will try running tests where 1 pub is on 1 VM and 5 subs on another. I will also create a template test results sheet and send it to Nayim where we store the data more efficiently in Excel as well as record the time taken for each test by checking the pub file.
