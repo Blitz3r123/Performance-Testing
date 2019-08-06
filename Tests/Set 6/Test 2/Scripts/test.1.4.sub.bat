@@ -1,0 +1,1 @@
+start cmd /k perftest_java.bat -sub -dataLen 4096 -numSubscribers 1 -domain 1 -latencyCount 10000 -numIter 10000000 -fileName sub1 -sidMultiSubTest 1

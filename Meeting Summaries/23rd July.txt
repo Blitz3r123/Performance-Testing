@@ -1,0 +1,5 @@
+We discussed the unusually large numbers for Kaleem's test results on the windows VMs. These were the first test results on the VM. The large numbers were consistent with the multicast tests (regardless of best effort or reliable). We still need to find out when running multiple subscriber tests with one publisher which subscriber does the latency packet travel to? The first or last or all? In the future we need to find out how to configure the multicast on Windows to avoid these large numbers. Here are the next steps:
+
+1. Find out what the latency values are. So in the pub file whether each row represents a second or the raw data of the latency packet.
+2. Implement a buffer at the end of the test. So the test will store all results in a buffer and then once the test is complete the buffer will be written to a csv file.
+3. Solve mystery behind windows multicast large numbers.
