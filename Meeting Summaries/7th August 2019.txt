@@ -1,0 +1,18 @@
+ Hope you are doing well. Good news! I have managed to get the buffer implemented on both the publisher and the subscriber sides. I have also muted all outputs to the terminal. Attached is a copy of the source files. Nayim please let me know  if the tests run fine.
+
+Here is a brief overview of what I did to implement the buffer.
+
+    Created 4 array lists with appropriate names and data types found on lines 121 to 124 in PerfTest.java
+    Used variable values to add to the arary lists on lines 917 to 920 in PerfTest.java
+    After the subscriber method is called (meaning the test is over), used a for loop to iterate over all array lists and write them to the csv file on lines 233 to 239 in PerfTest.java
+
+
+Thankfully the solution was a lot simpler than expected although there was a lot of code analysis. Vlad, I will now debug the windows virtual machines the way you mentioned yesterday. Here is a brief summary:
+
+    Run 1 pub 1 sub on a single machine on various machines.
+    Run 1 pub on one machine 1 sub on another and try different pairs/combinations.
+    Run 1 pub 1 sub on one machine with domain 1 and 1 pub 1 sub on another machine with domain 2.
+    I will also use debugging tools/techniques to understand which code is being executed and when and identify a solution.
+
+All the best,
+Kaleem
