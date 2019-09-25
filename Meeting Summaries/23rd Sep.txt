@@ -1,0 +1,5 @@
+We analysed Nayim and I's results. From the results Peter determined that best effort multicast would be the best way to attack a distributed system. We decided to do the following in the future:
+
+Nayim will run test with 1, 10, 100 instances. 100 instances will be determined depending on whether machines can handle for example 20 or 50.
+
+Kaleem will finish running tests for 512 byte and 4k before running multi instance tests like Nayim.
