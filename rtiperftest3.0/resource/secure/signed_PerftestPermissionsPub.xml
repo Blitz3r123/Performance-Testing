@@ -1,0 +1,93 @@
+MIME-Version: 1.0
+Content-Type: multipart/signed; protocol="application/x-pkcs7-signature"; micalg="sha-256"; boundary="----54E6FF3692F31F54B1D45D9389F1E7DB"
+
+This is an S/MIME signed message
+
+------54E6FF3692F31F54B1D45D9389F1E7DB
+Content-Type: text/plain
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<dds xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="dds_security_permissions.xsd">
+    <permissions>
+	    <grant name="ParticipantA">
+	        <subject_name>/C=US/ST=CA/O=Real Time Innovations/CN=perftest/emailAddress=pub@rti.com</subject_name>
+	        <validity>
+	            <!-- Format is CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm] in GMT -->
+	            <not_before>2013-06-01T13:00:00</not_before>
+	            <not_after>2023-06-01T13:00:00</not_after>
+	        </validity>
+	        <allow_rule>
+	            <domains>
+	              <id_range>
+	                <min>0</min>
+	              </id_range>
+	            </domains>
+	            <publish>
+	                <topics>
+	                    <topic>Throughput</topic>
+	                </topics>
+	            </publish>
+	            <publish>
+	                <topics>
+	                    <topic>Announcement</topic>
+	                </topics>
+	            </publish>
+	            <subscribe>
+	                <topics>
+	                    <topic>Latency</topic>
+	                </topics>
+	            </subscribe>
+	            <subscribe>
+	                <topics>
+	                    <topic>Announcement</topic>
+	                </topics>
+	            </subscribe>
+	        </allow_rule>
+	        <default>DENY</default>
+	    </grant>
+    </permissions>
+</dds>
+
+------54E6FF3692F31F54B1D45D9389F1E7DB
+Content-Type: application/x-pkcs7-signature; name="smime.p7s"
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="smime.p7s"
+
+MIIGVgYJKoZIhvcNAQcCoIIGRzCCBkMCAQExDzANBglghkgBZQMEAgEFADALBgkq
+hkiG9w0BBwGgggN8MIIDeDCCAmACCQCPTOgQ07xl6jANBgkqhkiG9w0BAQsFADB+
+MQswCQYDVQQGEwJVUzELMAkGA1UECAwCQ0ExEjAQBgNVBAcMCVN1bm55dmFsZTEe
+MBwGA1UECgwVUmVhbCBUaW1lIElubm92YXRpb25zMQ8wDQYDVQQDDAZSVEkgQ0Ex
+HTAbBgkqhkiG9w0BCQEWDnNlY3VyZUBydGkuY29tMB4XDTE5MDUzMDA5MTcwMloX
+DTI5MDUyNzA5MTcwMlowfjELMAkGA1UEBhMCVVMxCzAJBgNVBAgMAkNBMRIwEAYD
+VQQHDAlTdW5ueXZhbGUxHjAcBgNVBAoMFVJlYWwgVGltZSBJbm5vdmF0aW9uczEP
+MA0GA1UEAwwGUlRJIENBMR0wGwYJKoZIhvcNAQkBFg5zZWN1cmVAcnRpLmNvbTCC
+ASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAL3Vq8sP+dtqKWXCK+91OSAu
+RExgiAhI39+mrJM0v6vPkE83Q4ieaB2IZlrJD2fvxIXzyvK6OpTw9vKWGcFNm1Wn
+TEtylnAaQawcXTYZF5GzGaTNSXGxuaXegyrftrumF2Em2X8UX6olNeXwhQOF7j3M
+5chAQf5Sa0jISkDO6Y/LwI0E103oe/qpkTjt66KRUSXFnejL2Vum0NSnkr4hb250
+n8U4MAeKHfXStx8eYuv2ySjnvSvILrCZph2ASrgVJNUOJyXEOWVy1UQvNpw49/Bb
+kfYYSvFOcaRnlDWq4DRRGL2MLF5H3+3O12I/8radZz8i1HfnlmuoJIXQlIxm5f8C
+AwEAATANBgkqhkiG9w0BAQsFAAOCAQEAaW/up41xpnizTY0oBqYOCOJgmIYNgGeE
+u6H7w/Gvw8MK+/p0fkmlt9rOUc05GgVY0nPry06eKUYaCsM1rpTSXrVYERgstWj5
+NVf17xmN6JqYsyZk/00dDab4SITdTlsEEJ9k+Ktvnox3T+fts2doNdudw3faTg7d
+TMbIV+toWqWB7BghH3738UbscAd6G+ymPjvj0Phd8thOCdN6QO9mw3gA783f2+4w
+MNtFi34BnyzoOEgAwFxhgi8bvKx2qJNMHofxbZt9L4xxkZVK8xCBDgO2ARxYFwal
+JQHsjW/ZP+X2JIV+SvZ6RwT35OaOcS+AF1E5pi+6tiAPOLSs6x7WRzGCAp4wggKa
+AgEBMIGLMH4xCzAJBgNVBAYTAlVTMQswCQYDVQQIDAJDQTESMBAGA1UEBwwJU3Vu
+bnl2YWxlMR4wHAYDVQQKDBVSZWFsIFRpbWUgSW5ub3ZhdGlvbnMxDzANBgNVBAMM
+BlJUSSBDQTEdMBsGCSqGSIb3DQEJARYOc2VjdXJlQHJ0aS5jb20CCQCPTOgQ07xl
+6jANBglghkgBZQMEAgEFAKCB5DAYBgkqhkiG9w0BCQMxCwYJKoZIhvcNAQcBMBwG
+CSqGSIb3DQEJBTEPFw0xOTA1MzAwOTE3MDdaMC8GCSqGSIb3DQEJBDEiBCAmjwkT
+zTenD2QH4qcux9IMtdS/0EsBlzXdKsJN862EIzB5BgkqhkiG9w0BCQ8xbDBqMAsG
+CWCGSAFlAwQBKjALBglghkgBZQMEARYwCwYJYIZIAWUDBAECMAoGCCqGSIb3DQMH
+MA4GCCqGSIb3DQMCAgIAgDANBggqhkiG9w0DAgIBQDAHBgUrDgMCBzANBggqhkiG
+9w0DAgIBKDANBgkqhkiG9w0BAQEFAASCAQC8qZjsNo2oLoKR3FF0W2UwWXax5MWi
+jtLCTCFgRkuo6rI1/SSGqDCO+QslKDzpGWJbyBYFPhw6UeOpiKSrOQPx0HmG5R21
+5bn0XsWJYUoog0KnuT5IHclCGoKbE3fm8HE0Z8BF15vB+5VBcmldA34yyNxZHvRW
+LLaIFGPndDQ7JCvZAjthkj2c1+UNNB/nRG+Ajn3hBwkA7b/dFsYVUJSZhjd+e3a+
+x5g1botBjohY2I2Ms//V0LZEx7SYwcahCvDlWFaLGB6hBpIYFtZkSQxRB4n7Lfos
+jiwUfqlemEUcAPEUmLNPuloFIR0VOWkVgHjHMrYh5sI+8kXhQFZ/qEdx
+
+------54E6FF3692F31F54B1D45D9389F1E7DB--
+
