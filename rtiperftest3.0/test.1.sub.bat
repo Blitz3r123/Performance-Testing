@@ -1,1 +1,1 @@
-start cmd /k perftest_java.bat -sub -instances 10 -keyed -dataLen 40960 -domain 2 -bestEffort 
+start cmd /k perftest_java.bat -sub -dataLen 100 -domain 2 -bestEffort -fileName subscriber -numPublishers 5
