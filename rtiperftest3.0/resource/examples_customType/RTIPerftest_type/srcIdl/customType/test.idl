@@ -1,4 +1,0 @@
-const long MAX_SIZE = 63000;
-struct Test {
-    sequence<octet, MAX_SIZE> test_seq;
-};//@Extensibility FINAL_EXTENSIBILITY
