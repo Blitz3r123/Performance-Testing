@@ -1,4 +1,4 @@
-One-Way Latency(us): ,Ave(us): ,Std(us): ,Min(us): ,Max(us): 
+Latency,Ave(us): ,Std(us): ,Min(us): ,Max(us): 
 534,3507,2973,534,6480
 619,2544.333333,2783.152928,534,6480
 3890,2880.75,2479.714437,534,6480
